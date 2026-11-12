@@ -1,0 +1,24 @@
+// 🎨 Цветовая палитра
+$primary-color: #1e88e5;
+$secondary-color: #ff5722;
+$background-color: #f4f4f4;
+$text-color: #333;
+$border-radius: 8px;
+
+// 📏 Адаптивность
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+
+// 🔄 Сброс стандартных стилей
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+}

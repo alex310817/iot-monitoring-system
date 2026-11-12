@@ -1,0 +1,3 @@
+"use strict";(self.webpackChunkgrafana=self.webpackChunkgrafana||[]).push([[5357],{21953:(u,n,a)=>{a.r(n),a.d(n,{DataSourcePermissionsPage:()=>o,default:()=>d});var s=a(74848),e=a(54148),_=a(54122),E=a(12636),P=a(96326),r=a(61491),c=a(74735);const o=()=>{const{uid:t=""}=(0,e.g)(),D=(0,P.$m)("permissions"),M=(0,r.useSelector)(O=>O.navIndex),v=(0,E.tc)(M,`datasource-permissions-${t}`,D);return(0,s.jsx)(_.Y,{navId:"datasources",pageNav:v.main,children:(0,s.jsx)(_.Y.Contents,{children:(0,s.jsx)(c.A,{uid:t})})})},d=o}}]);
+
+//# sourceMappingURL=DataSourcePermissionsPage.a17dfa507070999aef95.js.map

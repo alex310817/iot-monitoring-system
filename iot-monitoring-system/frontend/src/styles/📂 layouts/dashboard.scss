@@ -1,0 +1,17 @@
+@import "../base/variables";
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 250px auto;
+  height: 100vh;
+
+  .sidebar {
+    background: $primary-color;
+    padding: 20px;
+    color: white;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}

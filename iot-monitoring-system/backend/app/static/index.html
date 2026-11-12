@@ -1,0 +1,35 @@
+@app.get("/")
+async def get():
+    html_content = """
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>WebSocket Chat</title>
+        </head>
+        <body>
+            <h1>WebSocket Chat</h1>
+            <input type="text" id="messageInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+            <ul id="messages"></ul>
+
+            <script>
+                const socket = new WebSocket("ws://localhost:8000/ws");
+
+                socket.onmessage = function(event) {
+                    const messagesList = document.getElementById("messages");
+                    const newMessage = document.createElement("li");
+                    newMessage.textContent = event.data;
+                    messagesList.appendChild(newMessage);
+                };
+
+                function sendMessage() {
+                    const input = document.getElementById("messageInput");
+                    const message = input.value;
+                    socket.send(message);
+                    input.value = '';
+                }
+            </script>
+        </body>
+    </html>
+    """
+    return HTMLResponse(content=html_content)

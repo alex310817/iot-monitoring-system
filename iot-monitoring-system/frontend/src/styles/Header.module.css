@@ -1,0 +1,12 @@
+/* src/styles/Header.module.css */
+.header {
+    background-color: var(--header-bg);
+    padding: 20px;
+    text-align: center;
+    color: var(--header-text);
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
